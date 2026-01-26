@@ -1,0 +1,55 @@
+{
+  // Hide original PDF folder since we have markdown versions
+  "files.exclude": {
+    "**/.ref-docs": true
+  },
+
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+
+  "github.copilot.chat.enabled": true,
+
+  // VERY IMPORTANT: enables project standards from copilot-instructions.md
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+
+  // Enable workspace prompts for test case generation
+  "github.copilot.chat.useWorkspacePrompts": true,
+
+  "github.copilot.advanced": {
+    "debug": false,
+    "inlineSuggestCount": 3,
+    "listMaxLength": 10,
+    "indentationMode": "indent"
+  },
+
+  // Markdown-specific settings for test case files
+  "[markdown]": {
+    "github.copilot.enable": true,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+  },
+  // Test case file associations
+  "files.associations": {
+    "*_Test.md": "markdown",
+    "*_test.md": "markdown"
+  },
+
+  // Exclude PDFs from search, use markdown versions in help_document instead
+  "search.exclude": {
+    "**/.ref-docs": true
+  },
+  "workbench.editorAssociations": {   
+        "*.md": "vscode.markdown.preview.editor",
+    }
+}
+

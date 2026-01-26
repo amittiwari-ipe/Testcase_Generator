@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Convert PDF to Markdown",
+      "type": "shell",
+      "command": "export PYTHONIOENCODING=utf-8 && uvx --python 3.14 markitdown \"${input:pdfPath}\" > \"${input:outputPath}\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Validate Test Case Format",
+      "type": "shell",
+      "command": "echo 'Checking test case format...' && grep -E '\\*\\*Test Case Title\\*\\*:|\\*\\*Preconditions\\*\\*:|\\*\\*Priority\\*\\*:|\\*\\*Coverage Expectations\\*\\*:' \"${file}\" || echo 'WARNING: Missing required sections'",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "List Test Cases",
+      "type": "shell",
+      "command": "ls -lh testcases/*.md",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "pdfPath",
+      "type": "promptString",
+      "description": "Path to PDF file (relative to workspace)"
+    },
+    {
+      "id": "outputPath",
+      "type": "promptString",
+      "description": "Output markdown file path (e.g., help_document/XPI/output.md)"
+    }
+  ]
+}
