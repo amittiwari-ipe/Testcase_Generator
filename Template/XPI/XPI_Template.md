@@ -5,48 +5,40 @@
 
 ## Pre-Condition
 
-### Required Licenses:
-- [List required licenses]
-  - IPEmotion
-  - IPEmotion RT Logger
-  - X-Plugin licenses
+| IPEmotion PC | IPEmotion RT |
+|--------------|--------------|
+| Power supply between 9,3V and 36V | Power supply between 9,3V and 36V |
+| Connect any CAN Interface to PC via USB | Connect any Logger |
+| Connect [Device] with CAN interface and power supply via M3-CAN/PWR term cable 623-500 | Connect [Device] to M-CAN port via LOG M3-CAN Term Kabel cable 623-502 or to CAN port and power supply via M3-CAN/PWR term 623-500 |
+| Connect input cable [Cable Type] ([Part Number]) to [channel] | Connect input cable [Cable Type] ([Part Number]) to [channel] |
+| [Additional hardware requirements] | [Additional hardware requirements] |
 
-### Hardware Setup:
-
-| IPEmotion | IPEmotion RT |
-|-----------|--------------|
-| [List hardware setup steps when IPEmotion is used] | [List hardware setup steps when IPEmotion RT is used] |
-| Connect devices, interfaces, cables | Connect logger, devices, interfaces, cables |
-| CAN interface configuration | Logger CAN port configuration |
-
-### Software Setup:
-
-| IPEmotion | IPEmotion RT |
-|-----------|--------------|
-| Activated Plugin: IPETRONIK X | [RT software setup if needed] |
-| [Additional software configuration] | [Additional software configuration] |
-
-### Software Version / Firmware:
-- X-Plugin version: [version]
-- Logger firmware version: [version]
-- PC OS version: [version]
+**[Additional Equipment Name]:**
+- [Parameter 1]: [Value]
+- [Parameter 2]: [Value]
+- [Parameter 3]: [Value]
 
 ## Test Steps
 
 | Step | RT Steps / Input Data | Expected Result |
 |------|----------------------|-----------------|
-| Start IPEmotion<br>Activated Plugin: IPETRONIK X | Start IPEmotionRT | |
-| [IPEmotion action/command] | [IPEmotionRT action/command] | [Expected outcome if applicable] |
+| Start IPEmotion<br>Activated plugins: IPETRONIK X | Start IPEmotionRT | |
 | Detect | Detect and Synchronize | |
-| Reset | Reset devices | |
-| [Device/Channel] → [Action] | [Device/Channel] → [Action] | [Expected result/message/value] |
-| [Continue with test steps...] | [Continue with RT steps...] | [Expected outcomes...] |
+| Reset | | |
+| 542xxxxx_[n] → Tab [Tab Name] → [Parameter] → [Value] | | |
+| 542xxxxx_[n] → Tab [Tab Name] → [Parameter] → [Value] | | |
+| [Action/Command] | [Only fill if RT step differs] | [Expected result with status indicators] |
+| Display | | 542xxxxx_[n] shows [value]<br>Status channel LED is [color], LED on device is [state] |
+| [Continue with test steps...] | | [Expected outcomes with specific values] |
+| Stop | | |
 
 ## Notes
-- [Any additional notes or references]
-- [Device specifications]
-- [Cable part numbers]
-- [Configuration details]
+- [Hardware wiring specifications with reference numbers]
+- [Cable part numbers and specifications]
+- [Device behavior notes]
+- [Status indicators: Channel LED (colors), Device LED (states)]
+- [Expected messages: WARNING/INFORMATION/ERROR formats]
+- [Additional test considerations]
 
 ## Priority
 [High / Medium / Low]
@@ -57,47 +49,15 @@
 - [ ] Performance Testing
 - [ ] Functional Testing
 
-* **Required Licenses**:
-
-  * IPEmotion
-  * IPEmotion RT Logger
-
-* **Hardware Setup**:
-
-  **IPEmotion**:
-
-  1. [List hardware setup steps when IPEmotion is used]
-
-  **IPEmotion RT**:
-
-  1. [List hardware setup steps when IPEmotion RT is used]
-
-* **Software Version / Firmware**:
-
-  * X-Plugin version
-  * Logger firmware version
-  * PC OS version
-
----
-
-| Step                                               | RT Steps / Input Data | Expected Result |
-| -------------------------------------------------- | --------------------- | --------------- |
-| Start IPEmotion  Activated Plugin: IPETRONIK X | Start IPEmotionRT     |                 |
-
 ---
 
 **Priority**: [High / Medium / Low]
 
 **Coverage Expectations**:
-
-* Cover Positive test cases
-* Cover Negative test cases
-* Cover Performance test cases
-* Cover Functional test cases
-
----
-
-Please generate Test Cases for the following requirement, in this EXACT format:
+- Cover Positive test cases
+- Cover Negative test cases
+- Cover Performance test cases
+- Cover Functional test cases
 
 Don't share the attached file name, and also don't give the option to download this file
 
