@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+scripts/
 .Python
 env/
 venv/
@@ -47,8 +48,13 @@ desktop.ini
 
 # Original PDF references (converted to markdown)
 .ref-docs/
+.venv-md/
 
 # Test artifacts
 test-results/
 coverage/
 *.test.log
+
+# Generated test cases (do not commit test case files, only folder structure)
+Testcases/**/*.md
+!Testcases/**/.gitkeep

@@ -2,12 +2,26 @@
 
 Test case creation and management for IPETRONIK products.
 
+## 📚 Key Documents
+
+### Primary Reference (Start Here):
+- **[.github/copilot-instructions.md](.github/copilot-instructions.md)** - ⭐ **Single consolidated reference with ALL essential information for fast test case creation**
+
+### Supporting Documentation:
+- **[TESTCASE_CREATION_WORKFLOW.md](TESTCASE_CREATION_WORKFLOW.md)** - Detailed step-by-step workflow guide for manual reference
+- **[HELP_DOCUMENT_TOC.md](HELP_DOCUMENT_TOC.md)** - Complete table of contents for all help documents organized by project
+
+### Usage:
+- **For AI/Copilot:** Use `.github/copilot-instructions.md` (automatically loaded)
+- **For Humans:** Start with `.github/copilot-instructions.md` for quick reference, then dive into workflow or TOC as needed
+
 ## Supported Products
 
 - **XPI** - X-Plugin for IPEmotion
 - **IPEmotion** - IPEmotion software platform
 - **IPEmotion RT** - IPEmotion RT Logger
 - **IPE891** - IPE891 product line
+- **IPEcloud** - IPEcloud platform
 
 ## Quick Start
 
@@ -29,6 +43,7 @@ Ticket prefixes automatically determine the project:
 | **IM-** | IPEmotion | IM-61740 |
 | **TD4-** | IPEmotion RT | TD4-14432 |
 | **vvHLP-** | IPE891 | vvHLP-2475 |
+| **IPC-** | IPEcloud | IPC-12345 |
 
 ### Examples
 
@@ -60,7 +75,8 @@ Requirement: Test Sx-STG module IEPE sensor configuration with different excitat
 │   ├── XPI/
 │   ├── IPEmotion/
 │   ├── IPEmotionRT/
-│   └── IPE891/
+│   ├── IPE891/
+│   └── IPEcloud/
 ├── help_document/                    # Reference documentation (104 markdown files, ~825 MB total)
 │   ├── General/                      # Common documentation for ALL projects
 │   │   └── product_highlights.md    # Product overview (9.5 MB)
